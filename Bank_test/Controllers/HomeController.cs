@@ -26,5 +26,16 @@ namespace Bank_test.Controllers
 
             return View();
         }
+
+        public ActionResult Serial(string letterCase)
+        {
+            var serial = "ASPNETMVC5ATM1";
+            if(letterCase == "lower")
+            {
+                return Content(serial.ToLower());
+            }
+            return RedirectToAction("Index");
+        }
+
     }
 }
