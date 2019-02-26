@@ -29,5 +29,7 @@ namespace Bank_test.Models
         {
             return new ApplicationDbContext();
         }
+
+        public DbSet<CheckingAccount> ChechingAccounts { get; set; }
     }
 }
