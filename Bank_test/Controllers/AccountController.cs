@@ -156,7 +156,9 @@ namespace Bank_test.Controllers
                 if (result.Succeeded)
                 {
                     var db = new ApplicationDbContext();
-                    var checkingAccount = new CheckingAccount { FirstName = model.FirstName, LastName = model.LastName, AccountNumber = "00000123456", Balance = 0, ApplicationUserID = user.Id };
+                    var accountNumber = (123456 + db.ChechingAccounts.Count()).ToString().PadLeft(10, '0');
+                    var checkingAccount = new CheckingAccount { FirstName = model.FirstName, LastName = model.LastName, AccountNumber = accountNumber, Balance = 0, ApplicationUserID = user.Id };
+                    //db.ChechingAccounts.Add(checkingAccount);
                     db.ChechingAccounts.Add(checkingAccount);
                     db.SaveChanges();
                     await SignInManager.SignInAsync(user, isPersistent:false, rememberBrowser:false);

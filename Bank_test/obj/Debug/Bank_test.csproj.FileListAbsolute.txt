@@ -392,3 +392,6 @@ C:\Temp\_distr\_progs\Csh\MVC_Bank_test\Bank_test\bin\ru\Microsoft.AspNet.Identi
 C:\Temp\_distr\_progs\Csh\MVC_Bank_test\Bank_test\obj\Debug\Bank_test.csprojResolveAssemblyReference.cache
 C:\Temp\_distr\_progs\Csh\MVC_Bank_test\Bank_test\obj\Debug\Bank_test.dll
 C:\Temp\_distr\_progs\Csh\MVC_Bank_test\Bank_test\obj\Debug\Bank_test.pdb
+C:\Temp\_distr\_progs\Csh\MVC_Bank_test\Bank_test\obj\Debug\Bank_test.Migrations.InitialCreate.resources
+C:\Temp\_distr\_progs\Csh\MVC_Bank_test\Bank_test\obj\Debug\Bank_test.csproj.GenerateResource.Cache
+C:\Temp\_distr\_progs\Csh\MVC_Bank_test\Bank_test\obj\Debug\Bank_test.Migrations.AccountNumberChanges.resources

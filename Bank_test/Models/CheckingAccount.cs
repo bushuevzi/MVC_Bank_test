@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Bank_test.Models
 {
@@ -11,7 +12,8 @@ namespace Bank_test.Models
         public int Id { get; set; }
 
         [Required]
-        //[StringLength(10, MinimumLength =6)]
+        [StringLength(10)]
+        [Column(TypeName ="varchar")]
         [RegularExpression(@"\d{6,10}", ErrorMessage = "Номер должен содержать от 6 до 10 цифр")]
         [Display(Name="Account #")]
         public string AccountNumber { get; set; }
@@ -37,6 +39,7 @@ namespace Bank_test.Models
 
         public virtual ApplicationUser User { get; set; }
 
+        [Required]
         public string ApplicationUserID { get; set; }
     }
 }
